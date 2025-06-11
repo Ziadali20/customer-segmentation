@@ -3,10 +3,7 @@ import { Line, Bar } from "react-chartjs-2";
 import ChartCard from "./ChartCard";
 import DataTable from "./DataTable";
 
-const cardVariants = {
-  hidden: { y: 50, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
-};
+
 
 function RevenueTab({
   monthlyRevenue,
@@ -142,7 +139,7 @@ function RevenueTab({
           title="Monthly Revenue"
           description="Tracks monthly revenue trends to identify growth patterns."
           chartData={monthlyRevenueLine}
-          rawData={monthlyRevenue}
+          // rawData={monthlyRevenue}
           chartRef={chartRefs.monthlyRevenue}
           ChartComponent={Line}
           exportFilename="monthly_revenue"
