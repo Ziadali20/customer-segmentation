@@ -1,0 +1,19 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore Python virtual environment
+venv/
+env/
+source/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore lock files
+yarn.lock
+package-lock.json
+uploads/
+processed/
